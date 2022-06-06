@@ -5,6 +5,7 @@
 # @File : test_register_success.py
 
 import logging
+import os
 import unittest
 
 from api.register import RegisterApi
@@ -31,3 +32,13 @@ class TestRegisterSuccess(unittest.TestCase):
         # 断言
         utils.common_assert(self, response, 200, 0, "OK")
         logging.info("注册成功用例执行完毕！")
+        mobile_id = json_data["data"]["id"]
+        mobile_phone = json_data["data"]["mobile_phone"]
+        # print(type(mobile_phone))
+        # print(type(mobile_id))
+        os.environ['BASE_MOBILE_PHONE'] = mobile_phone
+        os.environ['BASE_MOBILE_ID'] = str(mobile_id)
+        # print(os.getenv('BASE_MOBILE_ID'))
+        # print(os.getenv('BASE_MOBILE_PHONE'))
+        logging.info(f"注册成功写入环境变量mobile_phone= {os.getenv('BASE_MOBILE_PHONE')}")
+        logging.info(f"注册成功写入环境变量mobile_id= {os.getenv('BASE_MOBILE_ID')}")

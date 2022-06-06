@@ -5,6 +5,7 @@
 # @File : test_login_success.py
 
 import logging
+import os
 import unittest
 
 from api.login import LoginApi
@@ -15,15 +16,18 @@ class TestLoginSuccess(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
         cls.login_api = LoginApi()
+        cls.pwd = conf.BSAE_PASSWORD
+        # 先从环境变量中取值，找不到从配置文件中获取
+        cls.mobile = os.getenv('BASE_MOBILE_PHONE')
+        # BASE_MOBILE_ID = os.getenv('BASE_MOBILE_ID')
+        if cls.mobile is None:
+            # 测试数据
+            cls.mobile = conf.BASE_MOBILE_PHONE
 
     # 登录成功
     def test_login_success(self):
-        # 测试数据
-        mobile = "13800000002"
-        pwd = "1234567@"
-
         # 登录
-        response = self.login_api.login(mobile, pwd)
+        response = self.login_api.login(self.mobile, self.pwd)
         logging.info(f"response= {response.json()}")
 
         # 断言
