@@ -1,0 +1,34 @@
+[
+  {
+    "desc": "登录成功",
+    "mobile_phone": "15851218321",
+    "pwd": "1234567@",
+    "status_code": 200,
+    "code": 0,
+    "msg": "OK"
+  },
+  {
+    "desc": "账号信息错误",
+    "mobile_phone": "15946581029",
+    "pwd": "123456",
+    "status_code": 200,
+    "code": 1001,
+    "msg": "账号信息错误"
+  },
+  {
+    "desc": "无效的手机格式",
+    "mobile_phone": "1877276445",
+    "pwd": "123456",
+    "status_code": 200,
+    "code": 2,
+    "msg": "无效的手机格式"
+  },
+  {
+    "desc": "密码为空",
+    "mobile_phone": "18772764475",
+    "pwd": "",
+    "status_code": 200,
+    "code": 1,
+    "msg": "密码为空"
+  }
+]

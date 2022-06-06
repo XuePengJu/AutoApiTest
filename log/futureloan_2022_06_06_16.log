@@ -1,0 +1,4 @@
+2022-06-06 16:27:22,489 INFO [root] [login.py(__init__:18)] - login_url: http://api.mypeng.site:8080/futureloan/member/login
+2022-06-06 16:28:20,697 INFO [root] [login.py(__init__:18)] - login_url: http://api.mypeng.site:8080/futureloan/member/login
+2022-06-06 16:34:09,026 INFO [root] [login.py(__init__:18)] - login_url: http://api.mypeng.site:8080/futureloan/member/login
+2022-06-06 16:34:09,440 INFO [root] [login.py(login:36)] - response= {'code': 0, 'msg': 'OK', 'data': {'id': 2, 'leave_amount': 100.0, 'mobile_phone': '13800000002', 'reg_name': 'Postman_t', 'reg_time': '2022-04-26 10:38:51.0', 'type': 0, 'token_info': {'token_type': 'Bearer', 'expires_in': '2022-06-06 08:39:11', 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjIsImV4cCI6MTY1NDUwNDc1MX0.EvhIU-IQ2Lx-hyd3hN4tGBD57KxEvoY3HhnubnnKKIRt3nWUd-23tEV9GN_lMBXl68n7zdPF6260OmpOoFOO7w'}}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
