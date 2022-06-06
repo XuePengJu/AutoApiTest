@@ -8,4 +8,3 @@
 ### 2. 使用parameterized实现参数化场景
 ### 3. 使用了HTMLTestRunner实现测试报告的集成
 
-## !!! 注意：使用本项目，需要切换到apitestdemo分支
