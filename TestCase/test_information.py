@@ -15,8 +15,8 @@ class TestInForMation(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls) -> None:
-        cls.mobile = conf.base_user
-        cls.pwd = conf.base_pass
+        cls.mobile = conf.BASE_USERNAME
+        cls.pwd = conf.BSAE_PASSWORD
         cls.information_api = InForMation()
 
     def test_information(self):

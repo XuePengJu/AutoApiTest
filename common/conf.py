@@ -13,8 +13,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 BASE_URL = "http://api.mypeng.site:8080/futureloan"
 
 # base_user = "13800000001"
-base_user = "13800000002"
-base_pass = "1234567@"
+BASE_USERNAME = "13800000002"
+BSAE_PASSWORD = "1234567@"
 BASE_TYPEINT = 1
 # 请求头数据
 header_data = {

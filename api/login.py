@@ -41,7 +41,7 @@ if __name__ == '__main__':
     from common.utils import init_log_config
 
     init_log_config()
-    res = LoginApi().login(conf.base_user, conf.base_pass)
+    res = LoginApi().login(conf.BASE_USERNAME, conf.BSAE_PASSWORD)
     # print("response= {}".format(res.json()))
     # mobile_id = res.json()["data"]["id"]
     # print("json()中括号 mobile_id=", mobile_id)

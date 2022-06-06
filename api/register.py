@@ -43,7 +43,7 @@ class RegisterApi:
 if __name__ == '__main__':
     # 拼接手机号
     phone = getPhoneNumber.getPhoneNumber()
-    password = conf.base_pass
+    password = conf.BSAE_PASSWORD
     type_int = conf.BASE_TYPEINT
     response = RegisterApi.register(phone, password, type_int)
     logging.info("response= {}".format(response.json()))

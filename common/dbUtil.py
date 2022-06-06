@@ -68,8 +68,8 @@ if __name__ == '__main__':
     mysql = DBUtil(db_user, db_password, db_server, db_port, 'books')
     # mysql = DBUtil('root', 'Lemon123456!', 'api.mypeng.site', 3305, 'books')
     sql = "select * from t_book limit 1;"
-    # result = mysql.read_db(sql)
-    # print("select查询返回数据：", result)
+    result = mysql.read_db(sql)
+    print("select查询返回数据：", result)
     print("**" * 70)
     updatesql = 'update t_hero set name="山上有座庙" where id > 55'
     mysql.write_db(updatesql)

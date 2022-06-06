@@ -1,13 +1,6 @@
 import time
 
 
-print(time.time())
-
-
-print(time.strftime('%Y-%m-%d', time.localtime()))
-print(time.strftime('%Y年%m月%d日 %H时%M分%S秒', time.localtime()))
-
-
 def get_now_time():
     print(time.strftime('%H:%M:%S', time.localtime()))
 
@@ -26,9 +19,11 @@ def timetamp_format_standard_time(timestamp):
     """
     time_local = time.localtime(timestamp)
     standard_time = time.strftime("%Y-%m-%d %H:%M:%S", time_local)
+    print(standard_time)
     return standard_time
 
 
 if __name__ == '__main__':
     get_now_time()
     return_timeout()
+    timetamp_format_standard_time(time.time())

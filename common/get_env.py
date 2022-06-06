@@ -8,7 +8,7 @@ import configparser
 import logging
 import os
 
-import utils
+from common import utils
 
 
 def get_env(env, sections, parameter):  # todo 真实项目都有环境变量都有一个环境变量名称。根据环境变量来区分使用哪个配置文件

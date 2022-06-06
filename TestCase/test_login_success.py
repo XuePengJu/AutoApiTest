@@ -20,7 +20,7 @@ class TestLoginSuccess(unittest.TestCase):
     def test_login_success(self):
         # 测试数据
         mobile = "13800000002"
-        pwd = "12345678"
+        pwd = "1234567@"
 
         # 登录
         response = self.login_api.login(mobile, pwd)
